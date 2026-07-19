@@ -142,6 +142,10 @@ sources:
     weight: normal               # "normal" or "high"
     # baseline_silent: false     # optional, see "First run" above
     # alert_on_any_change: true  # optional, alert on any new item, not just keyword matches
+    # must_match: ["valorant"]   # optional relevance gate: an item only alerts if its
+    #                            # text or link contains one of these terms. Set on all
+    #                            # search sources so city-keyword results (tourism pages
+    #                            # etc.) can't alert - keep it when adding new searches.
 ```
 
 - `type: page` works for essentially any HTML page: official news pages,

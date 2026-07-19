@@ -126,12 +126,18 @@ sources:
   # results are diffed run-to-run like any other feed.
   # (DuckDuckGo's HTML endpoint was tried first but serves a bot-block
   # page to automated requests - don't switch back to it.)
+  # must_match: a search result only alerts if its title/snippet/link
+  # actually mentions the game - otherwise city-keyword results (tourism
+  # pages, "places to visit in Hangzhou", generic events) alert too.
+  # 无畏契约 is VALORANT's official Chinese name, so Chinese-language
+  # coverage passes the gate too.
   - id: search_hangzhou
     name: "Search: Hangzhou VALORANT event/tickets"
     type: rss
     url: "https://www.bing.com/search?q=Hangzhou+VALORANT+tickets+OR+venue+OR+event&format=rss"
     weight: high
     alert_on_any_change: true
+    must_match: ["valorant", "vct", "无畏契约"]
 
   - id: search_shanghai_champions
     name: "Search: Shanghai Champions 2026 tickets/venue"
@@ -139,12 +145,14 @@ sources:
     url: "https://www.bing.com/search?q=Shanghai+Champions+2026+VALORANT+tickets+venue&format=rss"
     weight: high
     alert_on_any_change: true
+    must_match: ["valorant", "vct", "无畏契约"]
 
   - id: search_general_vct_tickets
     name: "Search: VCT tickets on sale"
     type: rss
     url: "https://www.bing.com/search?q=VALORANT+Champions+Tour+tickets+on+sale&format=rss"
     weight: normal
+    must_match: ["valorant", "vct", "无畏契约"]
 
   # --- Ticket vendor pages: add these once a vendor is confirmed for a
   # specific event. Example (commented out) for a Damai event search page -

@@ -318,6 +318,11 @@ def process_source(source: dict, state: dict, keywords: dict) -> list[dict]:
     weight = source.get("weight", "normal")
     baseline_silent = source.get("baseline_silent", True)
     alert_on_any_change = source.get("alert_on_any_change", False)
+    # Relevance gate: when set, an item must contain at least one of these
+    # terms to alert at all. Essential for search sources, where results
+    # matching the query's city terms (tourism pages etc.) have nothing to
+    # do with VALORANT.
+    must_match = [kw.lower() for kw in source.get("must_match", [])]
 
     src_state = state["sources"].setdefault(
         src_id, {"seen_ids": [], "last_checked": None}
@@ -353,6 +358,11 @@ def process_source(source: dict, state: dict, keywords: dict) -> list[dict]:
         new_ids.append(cid)
 
         text_l = cand["text"].lower()
+        # A search result's link URL often carries the game name when the
+        # snippet doesn't (e.g. vlr.gg/... paths) - check both.
+        gate_text = text_l + " " + (cand.get("url") or "").lower()
+        if must_match and not any(kw in gate_text for kw in must_match):
+            continue  # already recorded as seen above, but never alertable
         ignored = [kw for kw in keywords.get("ignore", []) if kw.lower() in text_l]
         matched_high, matched_general = match_keywords(
             cand["text"], keywords.get("high_priority", []), keywords.get("general", [])
