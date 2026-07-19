@@ -1,0 +1,66 @@
+name: VALORANT Ticket Check
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub's minimum granularity is 5 minutes, but
+    # scheduled runs can lag behind the exact time under load - don't
+    # rely on precise timing. See README for how to change this.
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+
+# Lets the job push the updated state/seen.json back to the repo.
+permissions:
+  contents: write
+
+# If a run somehow takes longer than the schedule interval, queue the next
+# one instead of running two at once (which could race on the git push).
+concurrency:
+  group: ticket-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Check if any source needs a real browser
+        id: pw_check
+        run: |
+          # Anchored so commented-out example sources don't count
+          if grep -qE '^\s*render: *playwright' config.yaml; then
+            echo "needed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "needed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install Playwright browser (only if a source needs it)
+        if: steps.pw_check.outputs.needed == 'true'
+        run: playwright install --with-deps chromium
+
+      - name: Run ticket check
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python check.py
+
+      - name: Commit updated seen-state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/seen.json
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "Update seen-state [skip ci]"
+            git push
+          fi

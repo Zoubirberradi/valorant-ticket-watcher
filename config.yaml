@@ -1,0 +1,161 @@
+# VALORANT Ticket Watcher configuration
+#
+# Add/remove sources and keywords here. No code changes needed.
+# See README.md -> "Adding a new source" / "Editing keywords" for field docs.
+
+discord:
+  # Shown as the webhook message author name.
+  username: "VALORANT Ticket Watcher"
+
+keywords:
+  # Any match here marks an alert as HIGH PRIORITY regardless of which
+  # source it came from (in addition to sources explicitly weighted "high").
+  high_priority:
+    - "hangzhou"
+    - "杭州"
+    - "shanghai"
+    - "上海"
+    - "china"
+    - "中国"
+
+  # Kill-list: anything matching these is NEVER alerted (still recorded as
+  # seen). Use it to mute past seasons and concluded events - e.g. search
+  # results rotating in an old "Champions Paris tickets" article. Prune
+  # this as time moves on (add "2026" once the 2026 season is over, remove
+  # city names if they host again). Note the tradeoff: a genuinely new
+  # article that merely *mentions* a past year/city gets muted too - keep
+  # the list short and specific.
+  ignore:
+    - "2024"
+    - "2025"
+    # Concluded/past host cities (remove one if it gets announced as a
+    # future host again):
+    - "paris"
+    - "santiago"
+    - "toronto"
+    - "bangkok"
+    - "madrid"
+    - "seoul"
+    - "london"
+
+  # General VCT / ticketing terms. A match here (and not caught above)
+  # produces a normal-priority alert.
+  general:
+    - "ticket"
+    - "tickets"
+    - "on sale"
+    - "on-sale"
+    - "buy tickets"
+    - "box office"
+    - "venue announced"
+    - "venue confirmed"
+    - "venue reveal"
+    - "seating"
+    - "champions 2026"
+    - "champions tour"
+    - "vct"
+    - "masters"
+    - "kickoff"
+    - "lock//in"
+    - "ascension"
+    - "playoffs"
+    - "grand final"
+
+# Each source is checked independently every run; one failing source
+# never blocks the others (errors are logged, not raised).
+#
+# type: "page"      - fetch a URL, extract text/links, diff against last run
+# type: "json_feed" - fetch a JSON array of {title,url,date,description}-ish
+#                     items (e.g. the data.rito.news feeds below), diff by item
+# type: "rss"       - fetch an RSS/Atom feed, diff by item (e.g. the Bing
+#                     search-results feeds below, or any vendor RSS)
+#
+# render (type: page only):
+#   "static"     - plain HTTP GET (fast, no browser)
+#   "playwright" - render with a headless browser first (needed only for
+#                  pages whose real content requires JavaScript)
+#
+# weight: "high" | "normal" - "high" forces every alert from this source to
+#   be flagged high-priority even if no high_priority keyword matched.
+#
+# baseline_silent (optional, default true): on the very first run after a
+#   source is added, don't alert on its existing content - just record it
+#   as the baseline. Set to false if you want alerts for what's already
+#   there the moment you add a source (e.g. you just found a vendor page
+#   for an event that's about to go on sale).
+#
+# alert_on_any_change (optional, default false): alert on every new item,
+#   even if no keyword matched. Useful for a narrow vendor search-results
+#   page where anything new is relevant; noisy on broad news pages.
+
+sources:
+  # --- Official Riot/VALORANT news, via a public third-party feed mirror
+  # (data.rito.news - see https://github.com/Antosik/rito-news-feeds).
+  # This is not login-walled and is the closest thing to an official RSS/API.
+  - id: rito_news_en
+    name: "Official VALORANT news (EN feed)"
+    type: json_feed
+    url: "https://data.rito.news/val/en-us/news.json"
+    weight: normal
+
+  # --- Official esports site, global news + China league schedule.
+  # Confirmed server-rendered (no JS needed) as of 2026-07.
+  - id: valorantesports_news
+    name: "valorantesports.com - News"
+    type: page
+    url: "https://valorantesports.com/en-US/news"
+    render: static
+    weight: normal
+
+  - id: valorantesports_schedule
+    name: "valorantesports.com - Schedule"
+    type: page
+    url: "https://valorantesports.com/en-US/schedule"
+    render: static
+    weight: normal
+
+  - id: valorantesports_vct_china
+    name: "valorantesports.com - VCT China league page"
+    type: page
+    url: "https://valorantesports.com/en-US/leagues/vct_china"
+    render: static
+    weight: high
+
+  # --- General web-search checks, via Bing's RSS output (&format=rss).
+  # No API key needed and it returns structured items, so new search
+  # results are diffed run-to-run like any other feed.
+  # (DuckDuckGo's HTML endpoint was tried first but serves a bot-block
+  # page to automated requests - don't switch back to it.)
+  - id: search_hangzhou
+    name: "Search: Hangzhou VALORANT event/tickets"
+    type: rss
+    url: "https://www.bing.com/search?q=Hangzhou+VALORANT+tickets+OR+venue+OR+event&format=rss"
+    weight: high
+    alert_on_any_change: true
+
+  - id: search_shanghai_champions
+    name: "Search: Shanghai Champions 2026 tickets/venue"
+    type: rss
+    url: "https://www.bing.com/search?q=Shanghai+Champions+2026+VALORANT+tickets+venue&format=rss"
+    weight: high
+    alert_on_any_change: true
+
+  - id: search_general_vct_tickets
+    name: "Search: VCT tickets on sale"
+    type: rss
+    url: "https://www.bing.com/search?q=VALORANT+Champions+Tour+tickets+on+sale&format=rss"
+    weight: normal
+
+  # --- Ticket vendor pages: add these once a vendor is confirmed for a
+  # specific event. Example (commented out) for a Damai event search page -
+  # Damai is JS-heavy, hence render: playwright. Uncomment and fill in the
+  # real event URL once one exists; a generic Damai search page changes too
+  # often/broadly to be useful as-is.
+  #
+  # - id: damai_champions_shanghai
+  #   name: "Damai - VALORANT Champions Shanghai"
+  #   type: page
+  #   url: "https://search.damai.cn/search.htm?keyword=VALORANT"
+  #   render: playwright
+  #   weight: high
+  #   alert_on_any_change: true
