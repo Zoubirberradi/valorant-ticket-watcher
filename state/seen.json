@@ -1,7 +1,7 @@
 {
   "sources": {
     "rito_news_en": {
-      "last_checked": "2026-07-21T23:44:00.641120+00:00",
+      "last_checked": "2026-07-22T08:01:08.410534+00:00",
       "seen_ids": [
         "9783785feb1d7607c1c65b25b4d4fbef8ff89353",
         "ff19cf7843a146c9d1ee41315af97bc8853d4ba6",
@@ -106,7 +106,7 @@
       ]
     },
     "search_general_vct_tickets": {
-      "last_checked": "2026-07-21T23:44:02.900249+00:00",
+      "last_checked": "2026-07-22T08:01:10.157277+00:00",
       "seen_ids": [
         "d889d1a4bd71517a41be039febf97b671d43f5ed",
         "d9a3fb3b6a3ac672c9655cff6ccf9548196e4312",
@@ -136,7 +136,7 @@
       ]
     },
     "search_hangzhou": {
-      "last_checked": "2026-07-21T23:44:02.514126+00:00",
+      "last_checked": "2026-07-22T08:01:09.928845+00:00",
       "seen_ids": [
         "f5bb2f7554af35284af9f19b38776f729c007eb3",
         "c4d25f842aed47c7e718d6b196abd861a6472d4f",
@@ -152,11 +152,12 @@
         "df2c24909595378df1b92ea022b2fbe77116c4f0",
         "0f7f2ac73960d08b9f751900bc01546f65a33e5c",
         "8611aef8accaba616b9ba38334353b3faa628bf4",
-        "108bdf305a88ab2957f0cfea0140e44bb8489c26"
+        "108bdf305a88ab2957f0cfea0140e44bb8489c26",
+        "cb95392f73a39a3857ead9f6bbb645db642f6ae7"
       ]
     },
     "search_shanghai_champions": {
-      "last_checked": "2026-07-21T23:44:02.680210+00:00",
+      "last_checked": "2026-07-22T08:01:10.049241+00:00",
       "seen_ids": [
         "5f149f24009bbe80a804924b0d7e96787116ce6f",
         "03e167473059adbe8279bc1e0c8567c4e09c6980",
@@ -169,11 +170,21 @@
         "c99ce0f5281472136a6a8c3cff56efa23c4fca99",
         "e287150f33d6ee4e82624f042da475890b907fa0",
         "991f95bc7fad11a349adfdce813e17c46320b9b1",
-        "2d712ccbfb9ce6b52dc5f7b956196324b70ebaaa"
+        "2d712ccbfb9ce6b52dc5f7b956196324b70ebaaa",
+        "b1775180a105c99547d84347492d7b402ed33b5a",
+        "4f45a3cd7c1783108396eec87062113b5ba07d96",
+        "9c8e892d6f2c79bb93da74e4672353c171f60de7",
+        "00572f04c19d996e941c598911c4621decf0402a",
+        "a6f5d2b854b8860159c8c53f9ffef98d9d0534a5",
+        "40606e5fb5e7a1227f9d285f8c50b4cc5edac744",
+        "788c9c6f50f9807772a2edeae91c7c754b2d360d",
+        "d44dcac6339b7d1886b3f1f3038944bcf19a2abe",
+        "3273b4e5f6e54c76b3c7b31467a57e189d48ad58",
+        "29a7ba29b41d4dcfa1c51e12aceddd27eae55149"
       ]
     },
     "valorantesports_news": {
-      "last_checked": "2026-07-21T23:44:01.410655+00:00",
+      "last_checked": "2026-07-22T08:01:09.169401+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -301,7 +312,7 @@
       ]
     },
     "valorantesports_schedule": {
-      "last_checked": "2026-07-21T23:44:01.929045+00:00",
+      "last_checked": "2026-07-22T08:01:09.509121+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -336,11 +347,15 @@
         "1da4a61fd88afce4529352cfa459eee8f95a1c0b",
         "bb7181766848fd21547afe52414aa67c651a6f55",
         "c0c996c8c6678fc78acceaeaad84d2d86d5db203",
-        "16d9a2833c009fef8b480d4192d74089b57f5036"
+        "16d9a2833c009fef8b480d4192d74089b57f5036",
+        "d48f6ec180f5a4e0e036c4f85bf4dca1fc7beb06",
+        "8e4b179c060d55a171d66a7a1bda64f3570a2fd1",
+        "7eed70b4dab60faab860da52dd70f60b6b7f50aa",
+        "9256e5e107436b80e847141ec8ec2a5d6b58e830"
       ]
     },
     "valorantesports_vct_china": {
-      "last_checked": "2026-07-21T23:44:02.307761+00:00",
+      "last_checked": "2026-07-22T08:01:09.813533+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -432,7 +447,8 @@
         "29e717883cbfcd0e4f7da03f8c84bcb73a596d20",
         "3f6b4cba98591f5641637fc2dfa9db65b6b84b93",
         "9688169f576dd1091961fdbdd290641af38c2ad1",
-        "3699a6af5655cc372d7aeb66090be8798ca4d9a9"
+        "3699a6af5655cc372d7aeb66090be8798ca4d9a9",
+        "0368754f0ff935609f57d43a0fc6c53b0e661328"
       ]
     }
   }
