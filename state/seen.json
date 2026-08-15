@@ -1,7 +1,7 @@
 {
   "sources": {
     "rito_news_en": {
-      "last_checked": "2026-08-15T22:56:50.805547+00:00",
+      "last_checked": "2026-08-15T23:17:14.794693+00:00",
       "seen_ids": [
         "9783785feb1d7607c1c65b25b4d4fbef8ff89353",
         "ff19cf7843a146c9d1ee41315af97bc8853d4ba6",
@@ -109,7 +109,7 @@
       ]
     },
     "search_general_vct_tickets": {
-      "last_checked": "2026-08-15T22:56:53.511684+00:00",
+      "last_checked": "2026-08-15T23:17:17.744125+00:00",
       "seen_ids": [
         "d889d1a4bd71517a41be039febf97b671d43f5ed",
         "d9a3fb3b6a3ac672c9655cff6ccf9548196e4312",
@@ -194,11 +194,17 @@
         "c68d8c46341749f42ecea4cd0442f381f0649491",
         "09d02ecc97446c300a07c4fc7c918b5e2aadbb45",
         "b0ebbd9af4cdd03f67a247ddbd74a364e2141b9b",
-        "e0e334039c049b5a99b4dcd983eff81ef13b5977"
+        "e0e334039c049b5a99b4dcd983eff81ef13b5977",
+        "c750f892ad01898f5983baf35054f3df7f187e37",
+        "e50d589199416309168f817b4fff54a1de177ab7",
+        "5d9fdd09540ca748bbf3539b585cd709e429d02f",
+        "874c28db1949c558ddc9fbdceba98f1696e81b4c",
+        "c850fd9dbca4b4358730b0ee700e05c11fe1787a",
+        "b42ca185216b55bb83f72b512684e4931f69bdeb"
       ]
     },
     "search_hangzhou": {
-      "last_checked": "2026-08-15T22:56:53.084795+00:00",
+      "last_checked": "2026-08-15T23:17:17.079988+00:00",
       "seen_ids": [
         "f5bb2f7554af35284af9f19b38776f729c007eb3",
         "c4d25f842aed47c7e718d6b196abd861a6472d4f",
@@ -308,11 +314,20 @@
         "906dfc09dcc4f49afda5a30aefd029474f6d9a83",
         "8e49907873f8bc165f901b3acce4f3f8b9d10300",
         "af74c180459df5444ba35828fd1d30f1ae6cdfb5",
-        "0ddb934a2c27b4ad5ffca97807b44a5b231837d1"
+        "0ddb934a2c27b4ad5ffca97807b44a5b231837d1",
+        "29758ac1b2062143f728755bb67da5a35882a0e8",
+        "c83d14cc97ee576433069cd6da2312c27c8f679c",
+        "3b98c1b69413c737bd94fc2c63f6cbd73192fba9",
+        "e9da6301dc0a59af8c917ae00ad3e2d4b568f535",
+        "8be09cdd77215f559e36b842bd06e115b383a2d4",
+        "9bc1b8d53fe439a107558f56469da8a5d349096c",
+        "2f775bfaa96b750b0a465fa07cadd7c657816db3",
+        "13f785cd928a33a632e313e19b8167aba252a656",
+        "cc93513a5d09f27cc4b3a1d9676104d0268efbcb"
       ]
     },
     "search_shanghai_champions": {
-      "last_checked": "2026-08-15T22:56:53.313841+00:00",
+      "last_checked": "2026-08-15T23:17:17.547188+00:00",
       "seen_ids": [
         "5f149f24009bbe80a804924b0d7e96787116ce6f",
         "03e167473059adbe8279bc1e0c8567c4e09c6980",
@@ -466,11 +481,17 @@
         "e0408fbb6d09ab8cc08a499131f2e328f99b6907",
         "3d01076669c55723c243c4cf26c75560d022adc5",
         "6c7e69da5015b660a40622e62a813964feee74d6",
-        "18a97ced0b7942c5148664a51c56f90a35623dda"
+        "18a97ced0b7942c5148664a51c56f90a35623dda",
+        "87d23c4df8d70e696f4442ed29f44014ce261456",
+        "b789be7920596af2648e17ed19f2e95052fec7cc",
+        "6fdae36b04800199c747b3435a97abd1b1903fc7",
+        "1c700ef3085dd94e82a8b75466c474a8c094a990",
+        "87bebaa7599b9b2fc6160e861acb2db672fcaba5",
+        "76749124717e9805d92a9d8081033b0e5f97681a"
       ]
     },
     "valorantesports_news": {
-      "last_checked": "2026-08-15T22:56:52.008592+00:00",
+      "last_checked": "2026-08-15T23:17:15.500780+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -606,7 +627,7 @@
       ]
     },
     "valorantesports_schedule": {
-      "last_checked": "2026-08-15T22:56:52.481140+00:00",
+      "last_checked": "2026-08-15T23:17:16.190543+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -696,7 +717,7 @@
       ]
     },
     "valorantesports_vct_china": {
-      "last_checked": "2026-08-15T22:56:52.904956+00:00",
+      "last_checked": "2026-08-15T23:17:16.883598+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
