@@ -1,7 +1,7 @@
 {
   "sources": {
     "rito_news_en": {
-      "last_checked": "2026-09-04T23:36:03.026538+00:00",
+      "last_checked": "2026-09-05T01:23:46.482240+00:00",
       "seen_ids": [
         "9783785feb1d7607c1c65b25b4d4fbef8ff89353",
         "ff19cf7843a146c9d1ee41315af97bc8853d4ba6",
@@ -115,7 +115,7 @@
       ]
     },
     "search_general_vct_tickets": {
-      "last_checked": "2026-09-04T23:36:07.279222+00:00",
+      "last_checked": "2026-09-05T01:23:49.665202+00:00",
       "seen_ids": [
         "d889d1a4bd71517a41be039febf97b671d43f5ed",
         "d9a3fb3b6a3ac672c9655cff6ccf9548196e4312",
@@ -333,7 +333,7 @@
       ]
     },
     "search_hangzhou": {
-      "last_checked": "2026-09-04T23:36:07.010182+00:00",
+      "last_checked": "2026-09-05T01:23:49.146781+00:00",
       "seen_ids": [
         "f5bb2f7554af35284af9f19b38776f729c007eb3",
         "c4d25f842aed47c7e718d6b196abd861a6472d4f",
@@ -834,7 +834,7 @@
       ]
     },
     "search_shanghai_champions": {
-      "last_checked": "2026-09-04T23:36:07.125774+00:00",
+      "last_checked": "2026-09-05T01:23:49.397493+00:00",
       "seen_ids": [
         "5f149f24009bbe80a804924b0d7e96787116ce6f",
         "03e167473059adbe8279bc1e0c8567c4e09c6980",
@@ -1085,7 +1085,7 @@
       ]
     },
     "valorantesports_news": {
-      "last_checked": "2026-09-04T23:36:03.956718+00:00",
+      "last_checked": "2026-09-05T01:23:47.165257+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -1229,7 +1229,7 @@
       ]
     },
     "valorantesports_schedule": {
-      "last_checked": "2026-09-04T23:36:05.958123+00:00",
+      "last_checked": "2026-09-05T01:23:47.618682+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -1336,7 +1336,7 @@
       ]
     },
     "valorantesports_vct_china": {
-      "last_checked": "2026-09-04T23:36:06.878237+00:00",
+      "last_checked": "2026-09-05T01:23:48.851739+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
