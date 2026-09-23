@@ -1,7 +1,7 @@
 {
   "sources": {
     "rito_news_en": {
-      "last_checked": "2026-09-23T06:26:36.854966+00:00",
+      "last_checked": "2026-09-23T11:55:33.852778+00:00",
       "seen_ids": [
         "9783785feb1d7607c1c65b25b4d4fbef8ff89353",
         "ff19cf7843a146c9d1ee41315af97bc8853d4ba6",
@@ -128,7 +128,7 @@
       ]
     },
     "search_general_vct_tickets": {
-      "last_checked": "2026-09-23T06:26:39.071668+00:00",
+      "last_checked": "2026-09-23T11:55:35.401879+00:00",
       "seen_ids": [
         "d889d1a4bd71517a41be039febf97b671d43f5ed",
         "d9a3fb3b6a3ac672c9655cff6ccf9548196e4312",
@@ -392,7 +392,7 @@
       ]
     },
     "search_hangzhou": {
-      "last_checked": "2026-09-23T06:26:38.651927+00:00",
+      "last_checked": "2026-09-23T11:55:35.144310+00:00",
       "seen_ids": [
         "f5bb2f7554af35284af9f19b38776f729c007eb3",
         "c4d25f842aed47c7e718d6b196abd861a6472d4f",
@@ -1033,11 +1033,22 @@
         "2a41ab6b117529e287e3b49dc6fdf49b3a5f7cb3",
         "cd9cc72258dad521f9915ca1bdda791a67f7cc0b",
         "150d7b71e3531dd51f8b280de4ca097d42361ec0",
-        "c0681c60a3e96fa6152b81341da68ba7485b0d35"
+        "c0681c60a3e96fa6152b81341da68ba7485b0d35",
+        "f535aa0f94c25522023e877c773e8e32050c45bd",
+        "7fbd1fe0e009b4dacd4e1acc4dd8dbb0f17baf4d",
+        "3507d4b1225f54d04f84faebeca4310ae3a6f411",
+        "51c2334cadeb1c5a8c024dcc3b882450fde11cc7",
+        "966ad00cc49ee34b46277595b79674fe3de54988",
+        "9448fa3213bf199f300ce2c506ccdfe23a287b55",
+        "ff7c766cf24b98f5015cb0a59d2e4b8a428e3a9b",
+        "c58a0e379ff8bf2f9ef8b7e085a9bf51ea28510d",
+        "8f6407e6b3ab8f506b445b23f6d2be8ba098bf8d",
+        "b6a1a99fd8f11a74353d398c371964223e97d264",
+        "776fd95c46f5820b3b9a0233105eb55327cfa414"
       ]
     },
     "search_shanghai_champions": {
-      "last_checked": "2026-09-23T06:26:38.877766+00:00",
+      "last_checked": "2026-09-23T11:55:35.260295+00:00",
       "seen_ids": [
         "5f149f24009bbe80a804924b0d7e96787116ce6f",
         "03e167473059adbe8279bc1e0c8567c4e09c6980",
@@ -1333,7 +1344,7 @@
       ]
     },
     "valorantesports_news": {
-      "last_checked": "2026-09-23T06:26:37.433909+00:00",
+      "last_checked": "2026-09-23T11:55:34.339901+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -1491,7 +1502,7 @@
       ]
     },
     "valorantesports_schedule": {
-      "last_checked": "2026-09-23T06:26:37.978990+00:00",
+      "last_checked": "2026-09-23T11:55:34.719025+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -1605,7 +1616,7 @@
       ]
     },
     "valorantesports_vct_china": {
-      "last_checked": "2026-09-23T06:26:38.432894+00:00",
+      "last_checked": "2026-09-23T11:55:34.997904+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
