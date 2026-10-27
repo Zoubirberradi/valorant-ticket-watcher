@@ -1,7 +1,7 @@
 {
   "sources": {
     "rito_news_en": {
-      "last_checked": "2026-10-27T08:07:29.350374+00:00",
+      "last_checked": "2026-10-27T14:26:21.908328+00:00",
       "seen_ids": [
         "9783785feb1d7607c1c65b25b4d4fbef8ff89353",
         "ff19cf7843a146c9d1ee41315af97bc8853d4ba6",
@@ -137,11 +137,12 @@
         "4dd8ecce938cf0dadba1216329c579f0379d6b9d",
         "241b67ba7c861240f74f59a52449bfb26829de84",
         "d621bfebf4ade4dc91851cd65bb60f33a75e3a69",
-        "3b681add779c5173b456ce1f0aee7cc4b19d629b"
+        "3b681add779c5173b456ce1f0aee7cc4b19d629b",
+        "1975d2b1957e5ddec0dbb1da559fd525370b4b07"
       ]
     },
     "search_general_vct_tickets": {
-      "last_checked": "2026-10-27T08:07:38.393285+00:00",
+      "last_checked": "2026-10-27T14:26:31.236969+00:00",
       "seen_ids": [
         "d889d1a4bd71517a41be039febf97b671d43f5ed",
         "d9a3fb3b6a3ac672c9655cff6ccf9548196e4312",
@@ -452,7 +453,7 @@
       ]
     },
     "search_hangzhou": {
-      "last_checked": "2026-10-27T08:07:38.013456+00:00",
+      "last_checked": "2026-10-27T14:26:30.977669+00:00",
       "seen_ids": [
         "f5bb2f7554af35284af9f19b38776f729c007eb3",
         "c4d25f842aed47c7e718d6b196abd861a6472d4f",
@@ -1242,7 +1243,7 @@
       ]
     },
     "search_shanghai_champions": {
-      "last_checked": "2026-10-27T08:07:38.244654+00:00",
+      "last_checked": "2026-10-27T14:26:31.109893+00:00",
       "seen_ids": [
         "5f149f24009bbe80a804924b0d7e96787116ce6f",
         "03e167473059adbe8279bc1e0c8567c4e09c6980",
@@ -1555,7 +1556,7 @@
       ]
     },
     "valorantesports_news": {
-      "last_checked": "2026-10-27T08:07:30.065295+00:00",
+      "last_checked": "2026-10-27T14:26:23.480928+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -1729,7 +1730,7 @@
       ]
     },
     "valorantesports_schedule": {
-      "last_checked": "2026-10-27T08:07:33.898074+00:00",
+      "last_checked": "2026-10-27T14:26:26.964801+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
@@ -1845,7 +1846,7 @@
       ]
     },
     "valorantesports_vct_china": {
-      "last_checked": "2026-10-27T08:07:37.844996+00:00",
+      "last_checked": "2026-10-27T14:26:30.822278+00:00",
       "seen_ids": [
         "bdeb2aabce8b85026d654a05249919317b374672",
         "d493b59dd267bfaa7c5b4bcde2083e46b72a4409",
